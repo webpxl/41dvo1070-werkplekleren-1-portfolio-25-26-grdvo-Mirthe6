@@ -3,7 +3,25 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    display: flex;
+}
 
-h2{
-    background-color: lightcoral;
+header{
+    background-color: #7D85FF;
+    h2{
+        font-family:"Archivo Black", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .about{
+        background-color: white;
+        border: 1px solid white;
+        border-radius: 10px;
+        width: 50%;
+        height: auto;
+    }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
