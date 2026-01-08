@@ -113,4 +113,10 @@ main{
         border-radius: 10px;
         padding: 1%;
     }
+    .skills-vaardigheden-talenkennis{
+        background-color: lightpink;
+        border-radius: 10px;
+        width: 100%;
+        margin: 1%;
+    }
 }
