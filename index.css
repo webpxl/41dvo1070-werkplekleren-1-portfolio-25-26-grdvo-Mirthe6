@@ -5,23 +5,99 @@
 }
 body{
     display: flex;
+    flex-direction: column;
 }
 
 header{
-    background-color: #7D85FF;
+    background-color: #B8C2FF;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1%;
+    border-radius: 10px;
+
     h2{
         font-family:"Archivo Black", sans-serif;
         font-weight: 400;
         font-style: normal;
+        font-size: 300%;
+        margin-top: 6%;
+        margin-left: 3%;
     }
     .about{
-        background-color: white;
-        border: 1px solid white;
+        background-color: #E5E5E5;
+        border: 1px solid #E5E5E5;
         border-radius: 10px;
         width: 50%;
         height: auto;
+        padding: 2%;
+        margin: 2%;
+
+        #title-about{
+            border-bottom: 3px solid #B8C2FF;
+            text-align: center;
+        }
     }
+}
+
+main{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+
+    .project{
+        background-color: #FFF29F;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 1%;
+        border-radius: 10px;
+        padding: 1%;
+
+        #title-project{
+            background-color: #E5E5E5;
+            border-radius: 10px;
+            text-align: center;
+            width: 100%;
+        }
+        #weerwolven-project{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 60%;
+
+            .title-project-image{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                #weerwolven-title{
+                    font-size: 200%;
+                    font-weight: bold;
+                }
+                img[alt="project-image"]{
+                    width: 100px;
+                    height: auto;
+                    aspect-ratio: 83/92;
+                    border-radius: 10px;
+                    margin-top: 1%;
+
+                }
+            }
+            .concept{
+                text-align: justify;
+            }
+        }
+
+    }
+    .opleidingen{
+        background-color: #9FE5FF;
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin: 1%;
+        border-radius: 10px;
+        padding: 1%;
+    }
 }
