@@ -44,14 +44,16 @@ header{
 main{
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    gap: 2%;
 
     .project{
         background-color: #FFF29F;
         display: flex;
         flex-direction: column;
-        width: 50%;
-        margin: 1%;
+        width: 48%;
+        margin-left: 1%;
+        margin-bottom: 1%;
         border-radius: 10px;
         padding: 1%;
 
@@ -95,8 +97,19 @@ main{
         background-color: #9FE5FF;
         display: flex;
         flex-direction: column;
-        width: 50%;
-        margin: 1%;
+        width: 48%;
+        margin-right: 1%;
+        margin-bottom: 1%;
+        border-radius: 10px;
+        padding: 1%;
+    }
+    .interesses{
+        background-color: #9FE5FF;
+        display: flex;
+        flex-direction: column;
+        width: 48%;
+        margin-right: 1%;
+        margin-bottom: 1%;
         border-radius: 10px;
         padding: 1%;
     }
