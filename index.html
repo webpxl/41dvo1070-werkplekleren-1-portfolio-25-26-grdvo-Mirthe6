@@ -5,85 +5,121 @@
     <title>Portfolio Meertens Mirthe</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <script defer src="index.js"></script>
 </head>
 <body>
 
 <header>
-    <h2><i>Meertens Mirthe</i></h2>
-    <section class="about">
-        <h3 id="title-about">About me</h3>
-        <h5>
-            Ik ben iemand die weet waar die mee bezig is, soms heb ik wel iets meer tijd nodig maar doordat ik blijf
-            doorzetten en er blijf voor gaan tot het werk gedaan is. Ik ben zeer leergierig, sta open om telkens bij te
-            leren en nieuwe dingen te ontdekken. Een teamplayer is zeker iets wat bij mij past. Op deze manier kan ik
-            veel bijleren van andere mensen en kan ik hen ook helpen waar nodig is. Mensen helpen is iets wat ik graag
-            doe. Een smile op mensen hun gezicht zien, mensen gelukkig maken is het mooiste wat er is. Al deze kenmerken
-            samen vormen mij als persoon.
-        </h5>
-    </section>
+    <div class="header-content">
+        <h1>Mirthe Meertens</h1>
+        <p>Student DVO-Web · Creatief · Leergierig</p>
+
+        <nav>
+            <button data-target="interesses">Interesses</button>
+            <button data-target="skills">Vaardigheden</button>
+            <button data-target="projecten">Projecten</button>
+            <button data-target="talen">Talen</button>
+            <button data-target="opleiding">Opleiding</button>
+        </nav>
+    </div>
 </header>
 
 <main>
-    <section class="project">
-        <h3 id="title-project">Projecten</h3>
-        <article id="weerwolven-project">
-            <div class="title-project-image">
-                <img src="assets/weerwolven-image.png" alt="project-image">
-                <h4 id="weerwolven-title">weerwolven app</h4>
-            </div>
-            <h5 class="concept">
-                Een app waar je spelletjes weerwolven op kan spelen. Er zijn verschillende soorten van weerwolven zoals
-                bijvoorbeeld een middeleeuwse stijl aan weerwolven. Om ook al deze varianten bij te houden wouden wij
-                een app bedenken om alles bij te houden.
-            </h5>
-        </article>
+
+    <section id="interesses" class="fade-in">
+        <h2>Interesses</h2>
+        <ul class="tags">
+            <li>Magic the Gathering</li>
+            <li>Tekenen</li>
+            <li>Raadsels & puzzels</li>
+            <li>Creatief bezig zijn</li>
+            <li>Muziek</li>
+            <li>Lego</li>
+            <li>Technologie</li>
+        </ul>
+
     </section>
 
-    <section class="opleidingen">
-        <h3>opleidingen</h3>
-        <article>
-            <div id="secundair">
-                <h4>secundair onderwijs</h4>
-                <h5>1e middelbaar - 4e middelbaar heb ik Latijn gevolgd</h5>
-                <h5>3e graad heb ik techniek wetenschappen gevolgd</h5>
-            </div>
-            <div id="hoger">
-                <h4>hoger onderwijs</h4>
-                <h5>eerste opleiding die ik gevolgd heb was bachelor in de biomedische laboratoriumtechnieken</h5>
-                <h5>tweede opleiding die ik gevolgd heb was een bachelor lager onderwijs</h5>
-            </div>
-            <div>
-                <h4>huidige opleiding</h4>
-                <h5>momenteel volg ik een graduaat digitale vormgeving met het afstudeer traject WEB</h5>
-            </div>
-        </article>
+    <section id="skills" class="fade-in">
+        <h2>Vaardigheden & Skills</h2>
+
+        <div class="skill">
+            <span>Figma</span>
+            <div class="bar figma"></div>
+        </div>
+
+        <div class="skill">
+            <span>JavaScript</span>
+            <div class="bar js"></div>
+        </div>
+
+        <div class="skill">
+            <span>Photoshop / Illustrator</span>
+            <div class="bar adobe"></div>
+        </div>
+
+        <div class="skill">
+            <span>HTML / CSS</span>
+            <div class="bar html"></div>
+        </div>
     </section>
 
-    <section class="project">
-        <h3>project</h3>
-        <article>
+    <section id="projecten" class="fade-in">
+        <h2>Projecten</h2>
 
-        </article>
+        <div class="project-card">
+            <h3>Weerwolf App</h3>
+            <p>
+                Een app waar je het spel weerwolven digitaal kan spelen.
+                Er zijn verschillende soorten weerwolven, zoals varianten
+                in een middeleeuwse stijl.
+                Om al deze verschillende rollen en spelvarianten overzichtelijk
+                bij te houden, hebben we het idee bedacht om hiervoor een app te maken.
+            </p>
+            <span class="progress">35% afgerond</span>
+        </div>
+
+        <div class="project-card">
+            <h3>Limburg op de fiets – VZW</h3>
+            <p>
+                Limburg op de fiets is een project van een groep mensen die graag fietsen.
+                Het idee is ontstaan omdat de enige grote fietsbeurs in Kortrijk plaatsvindt,
+                terwijl er in Limburg steeds meer gefietst wordt dankzij de vele mooie routes,
+                zoals fietsen door de bomen in Hechtel-Eksel.
+                <br><br>
+                In het centrum van Hasselt kan je op een beurs kennismaken met verschillende
+                fietsdealers en op zoek gaan naar je volgende fiets.
+                Voor deze VZW wordt een website gebouwd om dit project en de beurs te ondersteunen.
+            </p>
+            <span class="progress">63% afgerond</span>
+        </div>
     </section>
 
-    <section class="interesses">
-        <h3>interesses</h3>
-        <article>
-
-        </article>
+    <section id="talen" class="fade-in">
+        <h2>Talenkennis</h2>
+        <ul class="languages">
+            <li>Nederlands – C2</li>
+            <li>Engels – B2</li>
+            <li>Frans – B1</li>
+        </ul>
     </section>
 
-    <section class="skills-vaardigheden-talenkennis">
-        skills en vaardigheden
+    <section id="opleiding" class="fade-in">
+        <h2>Opleiding</h2>
+        <p>
+            Secundair onderwijs – Techniek<br>
+            Graduaat DVO-Web
+        </p>
     </section>
 
 </main>
 
 <footer>
-
+    <h2>Contact</h2>
+    <p>📍 Neuserdijk 2, 3900 Pelt</p>
+    <p>📞 0479 84 27 56</p>
+    <p>✉️ m.meertens3@gmail.com</p>
 </footer>
 
 </body>

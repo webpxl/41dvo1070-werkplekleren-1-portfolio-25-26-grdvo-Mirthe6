@@ -3,122 +3,209 @@
     margin: 0;
     box-sizing: border-box;
 }
-body{
-    display: flex;
-    flex-direction: column;
+:root {
+    --bg: #f2f2f2;
+    --card: #ffffff;
+    --green: #3cbf9b;
+    --yellow: #f2d94c;
+    --pink: #f2a1b3;
+    --blue: #a8b8ff;
+    --text: #333333;
 }
 
-header{
-    background-color: #B8C2FF;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: var(--card);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 36px;
+}
+
+.header-content p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+nav {
+    margin-top: 25px;
+}
+
+nav button {
+    background: none;
+    border: 1px solid var(--blue);
+    color: var(--text);
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin: 4px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+nav button:hover {
+    background-color: var(--blue);
+}
+
+
+
+main {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+section {
+    margin-bottom: 80px;
+}
+
+section h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+
+.tags {
     display: flex;
-    flex-direction: row;
+    gap: 15px;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 1%;
+}
+
+.tags li {
+    background-color: var(--green);
+    padding: 8px 16px;
+    border-radius: 20px;
+    list-style: none;
+    color: white;
+    font-size: 14px;
+}
+
+
+
+.skill {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.skill span {
+    font-size: 14px;
+}
+
+.bar {
+    height: 10px;
     border-radius: 10px;
-
-    h2{
-        font-family:"Archivo Black", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        font-size: 300%;
-        margin-top: 6%;
-        margin-left: 3%;
-    }
-    .about{
-        background-color: #E5E5E5;
-        border: 1px solid #E5E5E5;
-        border-radius: 10px;
-        width: 50%;
-        height: auto;
-        padding: 2%;
-        margin: 2%;
-
-        #title-about{
-            border-bottom: 3px solid #B8C2FF;
-            text-align: center;
-        }
-    }
-}
-
-main{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 2%;
-
-    .project{
-        background-color: #FFF29F;
-        display: flex;
-        flex-direction: column;
-        width: 48%;
-        margin-left: 1%;
-        margin-bottom: 1%;
-        border-radius: 10px;
-        padding: 1%;
-
-        #title-project{
-            background-color: #E5E5E5;
-            border-radius: 10px;
-            text-align: center;
-            width: 100%;
-        }
-        #weerwolven-project{
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            width: 60%;
-
-            .title-project-image{
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-
-                #weerwolven-title{
-                    font-size: 200%;
-                    font-weight: bold;
-                }
-                img[alt="project-image"]{
-                    width: 100px;
-                    height: auto;
-                    aspect-ratio: 83/92;
-                    border-radius: 10px;
-                    margin-top: 1%;
-
-                }
-            }
-            .concept{
-                text-align: justify;
-            }
-        }
-
-    }
-    .opleidingen{
-        background-color: #9FE5FF;
-        display: flex;
-        flex-direction: column;
-        width: 48%;
-        margin-right: 1%;
-        margin-bottom: 1%;
-        border-radius: 10px;
-        padding: 1%;
-    }
-    .interesses{
-        background-color: #9FE5FF;
-        display: flex;
-        flex-direction: column;
-        width: 48%;
-        margin-right: 1%;
-        margin-bottom: 1%;
-        border-radius: 10px;
-        padding: 1%;
-    }
-    .skills-vaardigheden-talenkennis{
-        background-color: lightpink;
-        border-radius: 10px;
-        width: 100%;
-        margin: 1%;
-    }
+    margin-top: 6px;
 }
 
 
+.figma {
+    width: 60%;
+    background-color: var(--green);
+}
+
+.js {
+    width: 50%;
+    background-color: var(--yellow);
+}
+
+.adobe {
+    width: 45%;
+    background-color: var(--pink);
+}
+
+.html {
+    width: 70%;
+    background-color: var(--blue);
+}
+
+
+.project-card {
+    background-color: var(--card);
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.project-card h3 {
+    font-size: 20px;
+}
+
+.project-card p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.progress {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: var(--blue);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+
+.languages li {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+#opleiding p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+footer {
+    background-color: var(--card);
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+footer h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+footer p {
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
