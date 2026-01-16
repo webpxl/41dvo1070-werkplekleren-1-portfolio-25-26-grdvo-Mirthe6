@@ -18,3 +18,10 @@ const observer = new IntersectionObserver(entries => {
 sections.forEach(section => {
     observer.observe(section);
 });
+
+
+const reflectieBtn = document.getElementById("reflectieBtn");
+
+reflectieBtn.addEventListener("click", () => {
+    window.location.href = "reflectie.html";
+});
