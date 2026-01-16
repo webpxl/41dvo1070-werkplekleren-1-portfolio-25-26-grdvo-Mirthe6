@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 :root {
     --bg: #f2f2f2;
     --card: #ffffff;
@@ -13,12 +14,6 @@
     --text: #333333;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: 'Inter', sans-serif;
     background-color: var(--bg);
@@ -26,13 +21,9 @@ body {
     line-height: 1.6;
 }
 
-
 header {
     background-color: var(--card);
-    padding-top: 60px;
-    padding-bottom: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
@@ -40,10 +31,45 @@ header {
     font-size: 36px;
 }
 
-.header-content p {
+.header-content > p {
     font-size: 16px;
     margin-top: 10px;
 }
+
+.header-content div {
+    max-width: 700px;
+    margin: 30px auto 0;
+}
+
+.header-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.header-content div p {
+    font-size: 14px;
+}
+.header-layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.header-text {
+    flex: 1;
+    text-align: left;
+}
+
+.header-image img {
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 
 
 nav {
@@ -67,15 +93,10 @@ nav button:hover {
 }
 
 
-
 main {
     max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin: auto;
+    padding: 40px 20px;
 }
 
 section {
@@ -104,10 +125,8 @@ section h2 {
 }
 
 
-
 .skill {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .skill span {
@@ -119,7 +138,6 @@ section h2 {
     border-radius: 10px;
     margin-top: 6px;
 }
-
 
 .figma {
     width: 60%;
@@ -147,15 +165,19 @@ section h2 {
     padding: 25px;
     border-radius: 20px;
     margin-bottom: 30px;
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
 }
 
-.project-card h3 {
-    font-size: 20px;
+.project-text {
+    flex: 1;
 }
 
-.project-card p {
-    margin-top: 10px;
-    font-size: 14px;
+.project-card img {
+    width: 220px;
+    height: auto;
+    border-radius: 16px;
 }
 
 .progress {
@@ -166,12 +188,25 @@ section h2 {
     border-radius: 20px;
     font-size: 13px;
 }
+.gebruikte-skills {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: var(--pink);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+}
 
+
+.languages {
+    list-style: none;
+}
 
 .languages li {
     font-size: 14px;
     margin-bottom: 8px;
 }
+
 
 #opleiding p {
     font-size: 14px;
@@ -179,13 +214,24 @@ section h2 {
 }
 
 
+#speciale-sectie p {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.titel-andere-weetjes{
+    display: inline-block;
+    margin-top: 15px;
+    background-color: var(--yellow);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+
 footer {
     background-color: var(--card);
     text-align: center;
-    padding-top: 40px;
-    padding-bottom: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 40px 20px;
 }
 
 footer h2 {
@@ -209,3 +255,25 @@ footer p {
     opacity: 1;
     transform: translateY(0);
 }
+
+@media (max-width: 768px) {
+    .header-layout {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-text {
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .header-layout {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-text {
+        text-align: center;
+    }
+}
+

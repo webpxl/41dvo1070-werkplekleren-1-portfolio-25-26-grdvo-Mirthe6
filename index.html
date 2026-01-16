@@ -8,30 +8,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
     <script defer src="index.js"></script>
 </head>
-<body>
 
+<body>
 <header>
-    <div class="header-content">
-        <h1>Mirthe Meertens</h1>
-        <p>Student DVO-Web · Creatief · Leergierig</p>
-        <div>
-            <h3>informatie over mij</h3>
-            <p>
-                Ik ben iemand die weet waar die mee bezig is, soms heb ik wel iets meer tijd nodig maar doordat ik blijf
-                doorzetten en er blijf voor gaan tot het werk gedaan is. Ik ben zeer leergierig, sta open om telkens bij
-                te leren en nieuwe dingen te ontdekken. Een teamplayer is zeker iets wat bij mij past. Op deze manier
-                kan ik veel bijleren van andere mensen en kan ik hen ook helpen waar nodig is. Mensen helpen is iets wat
-                ik graag doe. Een smile op mensen hun gezicht zien, mensen gelukkig maken is het mooiste wat er is. Al
-                deze kenmerken samen vormen mij als persoon.
-            </p>
+    <div class="header-content header-layout">
+
+        <div class="header-image">
+            <img src="assets/foto%20mirthe.jpg" alt="Profielfoto Mirthe">
         </div>
-        <nav>
-            <button data-target="interesses">Interesses</button>
-            <button data-target="skills">Vaardigheden</button>
-            <button data-target="projecten">Projecten</button>
-            <button data-target="talen">Talen</button>
-            <button data-target="opleiding">Opleiding</button>
-        </nav>
+
+        <div class="header-text">
+            <h1>Mirthe Meertens</h1>
+            <p>Student DVO-Web · Creatief · Leergierig</p>
+
+            <div>
+                <h3>informatie over mij</h3>
+                <p>
+                    Ik ben iemand die weet waar die mee bezig is, soms heb ik wel iets meer tijd nodig maar doordat ik
+                    blijf doorzetten en er blijf voor gaan tot het werk gedaan is. Ik ben zeer leergierig, sta open om
+                    telkens bij te leren en nieuwe dingen te ontdekken. Een teamplayer is zeker iets wat bij mij past.
+                    Op deze manier kan ik veel bijleren van andere mensen en kan ik hen ook helpen waar nodig is. Mensen
+                    helpen is iets wat ik graag doe. Een smile op mensen hun gezicht zien, mensen gelukkig maken is het
+                    mooiste wat er is. Al deze kenmerken samen vormen mij als persoon.
+                </p>
+            </div>
+
+            <nav>
+                <button data-target="interesses">Interesses</button>
+                <button data-target="skills">Vaardigheden</button>
+                <button data-target="projecten">Projecten</button>
+                <button data-target="talen">Talen</button>
+                <button data-target="opleiding">Opleiding</button>
+            </nav>
+        </div>
+
     </div>
 </header>
 
@@ -78,32 +88,96 @@
     <section id="projecten" class="fade-in">
         <h2>Projecten</h2>
 
-        <div class="project-card">
-            <h3>Weerwolf App</h3>
-            <p>
-                Een app waar je het spel weerwolven digitaal kan spelen.
-                Er zijn verschillende soorten weerwolven, zoals varianten
-                in een middeleeuwse stijl.
-                Om al deze verschillende rollen en spelvarianten overzichtelijk
-                bij te houden, hebben we het idee bedacht om hiervoor een app te maken.
-            </p>
-            <span class="progress">35% afgerond</span>
-        </div>
+        <article class="project-card">
+            <div class="project-text">
+                <h3>Weerwolf App - eigen project</h3>
+                <p>
+                    <br><br>
+                    Een app waar je het spel weerwolven digitaal kan spelen.
+                    Er bestaan verschillende varianten, zoals een middeleeuwse stijl.
+                    Om alles overzichtelijk bij te houden werd deze app bedacht.
+                </p>
+                <span class="progress">35% afgerond</span>
+                <span class="gebruikte-skills">figma</span>
+                <span class="gebruikte-skills">HTML en CSS</span>
+                <span class="gebruikte-skills">JavaScript</span>
+            </div>
+        </article>
 
-        <div class="project-card">
-            <h3>Limburg op de fiets – VZW</h3>
-            <p>
-                Limburg op de fiets is een project van een groep mensen die graag fietsen.
-                Het idee is ontstaan omdat de enige grote fietsbeurs in Kortrijk plaatsvindt,
-                terwijl er in Limburg steeds meer gefietst wordt dankzij de vele mooie routes,
-                zoals fietsen door de bomen in Hechtel-Eksel.
-                <br><br>
-                In het centrum van Hasselt kan je op een beurs kennismaken met verschillende
-                fietsdealers en op zoek gaan naar je volgende fiets.
-                Voor deze VZW wordt een website gebouwd om dit project en de beurs te ondersteunen.
-            </p>
-            <span class="progress">63% afgerond</span>
-        </div>
+        <article class="project-card">
+            <div class="project-text">
+                <h3>Limburg op de fiets (VZW) - eigen project</h3>
+                <p>
+                    <br><br>
+                    Website voor een VZW die fietsen in Limburg promoot.
+                    Ontstaan door het gebrek aan een fietsbeurs in Limburg,
+                    ondanks populaire routes zoals Fietsen door de Bomen.
+                </p>
+                <span class="progress">13% afgerond</span>
+                <span class="gebruikte-skills">HTML en CSS</span>
+                <span class="gebruikte-skills">JavaScript</span>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div class="project-text">
+                <h3>Game Website – UI Project</h3>
+                <p>
+                    Het is een project waar ik samen met een klasgenoot aan gewerkt heb. Samen zijn wij aan de slag
+                    gegaan
+                    om een app te creeëren die kan gebruikt worden bij het spelen van Magic The Gathering maar ook voor
+                    Dungeons & Dragons. Hierin kan je al je decks bij te houden. Zowel diegene die je zelf hebt gebouwd
+                    maar
+                    ook precons kunnen hierin opgeslagen worden. Eerder had ik al verteld dat D&D ook gespeeld kan
+                    worden
+                    door middel van je karaktersheets erin toe te voegen dat deze overal met je mee hebt. Deze app is
+                    appart
+                    van de rest doordat je tijdens het spelen ook een muziekfunctie aanwezig is. Wij zijn met dit
+                    probleem
+                    aan de slag gegaan omdat wij niet meer met zowel spotify als een website voor al je decks of 7
+                    deckdozen
+                    wouden houden. Door deze applicatie is alls dus op 1 handige plaats.
+                    <br>
+                    We zijn dus begonnen met brainstormen van hoe en wat er nu precies allemaal in kwam te staan en hoe
+                    we
+                    alles het beste konden weergeven. Daarna hebben we een taskflow uitgewerkt en zijn we gaan
+                    wireframen.
+                    Hierbij hebben wij ook een website versie moeten maken zodat het overal toegankelijk is. Als laaste
+                    hebben wij nagedacht over een uitwerking. Dit hebben wij beide individueel gedaan om zelf een heel
+                    mooi
+                    eind resultaat te creëren.
+                    <br><br>
+                    UI-project rond het ontwerpen van een game app.
+                </p>
+                <span class="progress">80% afgerond</span>
+                <span class="gebruikte-skills">figma</span>
+            </div>
+            <img src="assets/UI-project-MM.png" alt="UI-Mirthe">
+        </article>
+
+        <article class="project-card">
+            <div class="project-text">
+                <h3>Take Away Website – Scripting Project</h3>
+                <p>
+                    Voor ons eindopdracht van dit vak moesten wij een take-away website bouwen aan de hand van
+                    JavaScript.
+                    Zelf kregen wij een start array waar we mee verder moesten werken. Hier ben ik dan ook direct mee
+                    aan de
+                    slag gegaan. Niet alleen de items via java laten renderen maar ook werken met buttons (die ook
+                    werken)
+                    en een aparte pagina voor je bestelling die je gedaan hebt. Dit moest dan nog zeer mooi gelay-out
+                    worden
+                    om er een zeer mooi examplaar van te maken.
+                    <br><br>
+                    Website voor een take-away zaak met focus op scripting
+                    en functionaliteit.
+                </p>
+                <span class="progress">afgerond</span>
+                <span class="gebruikte-skills">HTML en CSS</span>
+                <span class="gebruikte-skills">JavaScript</span>
+            </div>
+            <img src="assets/scripting-project-MM.png" alt="scripting-Mirthe">
+        </article>
     </section>
 
     <section id="talen" class="fade-in">
@@ -123,6 +197,34 @@
         </p>
     </section>
 
+    <section id="speciale-sectie" class="fade-in">
+        <h2>Andere weetjes</h2>
+        <div>
+            <h4 class="titel-andere-weetjes">eerste weetje</h4>
+            <p>
+                Ik leer heel snel bij en ontdek graag nieuwe dingen. Dit komt wel goed van pas binnen onze sector omdat
+                deze
+                zo snel aan het groeien is.
+            </p>
+        </div>
+        <br>
+        <div>
+            <h4 class="titel-andere-weetjes">tweede weetje</h4>
+            <p>
+                ik heb een passie voor tekenen maar ben daarvoor nooit naar de academie geweest.
+            </p>
+        </div>
+        <br>
+        <div>
+            <h4 class="titel-andere-weetjes">derde weetje</h4>
+            <p>
+                Logica en redeneren zijn dingen die ik kei graag doe. Of ik er goed in ben of niet maakt mij niet uit
+                maar
+                blijven proberen en niet opgeven zorgt ervoor dat ik het resultaat bereik dat ik zeer graag wil
+                bereiken.
+            </p>
+        </div>
+    </section>
 </main>
 
 <footer>
@@ -131,6 +233,5 @@
     <p>0479 84 27 56</p>
     <p>m.meertens3@gmail.com</p>
 </footer>
-
 </body>
 </html>
